@@ -1,4 +1,4 @@
-# CS 171 - nteractive Data Visualization with D3
+# CS 171 - Interactive Data Visualization with D3
 Professional Graduate Data Science Coursework - Fall semester 2016
 
 ## Description: 
