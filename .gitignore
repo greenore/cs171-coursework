@@ -1,0 +1,4 @@
+# Ignore the following files
+/videos    # Too large
+/project   # Seperate git project
+.Rproj.user
