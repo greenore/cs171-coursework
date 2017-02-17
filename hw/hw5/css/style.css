@@ -1,0 +1,125 @@
+/* ADD YOUR STYLES HERE */
+
+#header {
+    width: 100%;
+    height: 300px;
+    background-position: 30% 80%;
+    background-size: cover;
+    background-image: url('../img/image2.jpg');
+}
+#header_txt {
+    width: 100%;
+    text-align: left;
+    z-index: 100;
+    color: #ffce00;
+    margin: auto;
+    font-size: 70px;
+    font-weight: bold;
+    width: 1000px;
+}
+#space1 {
+    height: 160px;
+}
+#space2 {
+    height: 30px;
+}
+body {
+    background-color: rgba(211, 211, 211, 0.15);
+}
+.btn {
+    background-color: #cecece;
+}
+.form-inline {
+    float: left;
+}
+.circle {
+    fill: rgb(49, 169, 198);
+}
+.table {
+    background: rgba(0, 0, 0, 0.8);
+}
+caption {
+    display: table-caption;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #ffce00;
+    font-size: 16px;
+    font-weight: bold;
+}
+td {
+    width: 30%;
+}
+tr {
+    text-align: left;
+    color: #fff;
+    font-size: 16px;
+}
+
+/****************/
+
+
+/*  LINE CHART  */
+
+
+/****************/
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
+.axis text {
+    font-size: 11px;
+}
+.line {
+    fill: none;
+    stroke: rgb(49, 169, 198);
+    stroke-width: 2px;
+}
+.tooltip-circle {
+    fill: #96AB96;
+}
+
+/*********************/
+
+
+/*  TOOLTIP OVERLAY  */
+
+
+/*********************/
+
+.tooltip-title {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+.d3-tip {
+    line-height: 1;
+    padding: 12px;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    border-radius: 2px;
+}
+
+/* Creates a small triangle extender for the tooltip */
+
+.d3-tip:after {
+    box-sizing: border-box;
+    display: inline;
+    font-size: 10px;
+    width: 100%;
+    line-height: 1;
+    color: rgba(0, 0, 0, 0.8);
+    content: "\25BC";
+    position: absolute;
+    text-align: center;
+}
+
+/* Style northward tooltips differently */
+
+.d3-tip.n:after {
+    margin: -1px 0 0 0;
+    top: 100%;
+    left: 0;
+}

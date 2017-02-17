@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CS171 - HW 5</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="wrapper" id="header">
+        <div id="header_txt">
+            <div id="space1">
+            </div>
+            <h1>FIFA World Cup<sup>TM</sup></h1>
+            <h2>All Time Statistics</h2>
+        </div>
+    </div>
+
+    <div id="space2">
+    </div>
+
+
+    <div class="container">
+
+        <!-- Select box to choose the ranking type -->
+        <div class="col-md-8">
+            <form class="form-inline">
+
+                <div class="form-group">
+                    <label for="ranking-type">Chart Data:</label>
+                    <select class="form-control" id="ranking-type" onchange="updateVisualization()">
+                        <option value="GOALS">Goals</option>
+                        <option value="AVERAGE_ATTENDANCE">Average Attendance</option>
+                        <option value="MATCHES">Matches</option>
+                        <option value="TEAMS">Teams</option>
+                        <option value="AVERAGE_GOALS">Average Goals</option>
+                    </select>
+                </div>
+
+                <div class="form-group col-lg-6 pull-right">
+                    <label for="timePeriod">Time Period:</label>
+                    <div class="input-group col-lg-3">
+                        <input type="text" class="form-control" value="1930" id="startYear" />
+                    </div>
+                    <span>-</span>
+                    <div class="input-group col-lg-3">
+                        <input type="text" class="form-control" value="2014" id="endYear" />
+                    </div>
+                    <button type="button" class="btn btn-default" id="button" onclick="updateVisualization()">Filter</button>
+                </div>
+            </form>
+
+
+            <!-- Parent container for the visualization -->
+            <div class="row">
+                <div id="chart-area"></div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div id="text-area"></div>
+        </div>
+
+
+
+        <!-- Load JS libraries: jQuery, bootstrap, D3, D3 tooltip -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/d3.min.js"></script>
+        <script src="js/d3.tip.js"></script>
+
+        <!-- Your implementation -->
+        <script src="js/main.js"></script>
+</body>
+
+</html>

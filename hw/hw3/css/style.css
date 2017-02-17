@@ -1,0 +1,53 @@
+html * {
+    font-family: Helvetica;
+    background-color: lightsteelblue;
+}
+h1 {
+    color: #65443a;
+    text-shadow: top;
+    font-size: 50px;
+    background-color: #9bcbcb;
+}
+.tower-names {
+    text-anchor: end;
+    cursor: pointer;
+}
+.bar-chart {
+    cursor: pointer;
+}
+.bar-labels {
+    cursor: pointer;    
+}
+.bar-labels {
+    text-anchor: end;
+    fill: white;
+}
+.image {
+    width: 275px;
+    float: left;
+    height: auto;
+}
+#building_info {
+    float: right;
+    background-color: none;
+}
+h4 {
+    font-size: 25px;
+}
+.mytable {
+    table-layout: fixed;
+    width: 300px;
+    background-color: none;
+}
+th,
+td {
+    font-size: 16px;
+    border-top: 1px solid lightgrey;
+    background-color: none;
+}
+#building-title {
+    width: 300px;
+}
+#annotation{
+    color: #6a6a6a;
+}

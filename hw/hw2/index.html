@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CS171 - HW2</title>
+
+    <!-- Load CSS libraries -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- ********************** ADD YOUR HTML-ELEMENTS HERE *********************** -->
+    <!-- Make sure to include a div-container with the id: 'chart-area' -->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-10">
+                <table class='table-logo'>
+                    <td>
+                        <h1>Pizza Delivery Calculator</h1>
+                    </td>
+
+                    <td>
+                        <img src="img/PizzaWorld-Logo.png" id="logo" alt="Pizza-World-Logo" />
+                    </td>
+                </table>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <h4>Delivery Area</h4>
+                <div class="user-control">
+                    <select id="delivery-area" class="form-control" onchange="dataManipulation()">
+                        <option value="All">All</option>
+                        <option value="Boston">Boston</option>
+                        <option value="Cambridge">Cambridge</option>
+                        <option value="Somerville">Somerville</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <h4>Order Type</h4>
+                <div class="user-control">
+                    <select id="order-type" class="form-control" onchange="dataManipulation()">
+                        <option value="All">All</option>
+                        <option value="Web">Web</option>
+                        <option value="Phone">Phone</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-8">
+                <div id="chart-area"></div>
+                <div class="col-sm-4">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-10">
+                <div id="text-area"></div>
+            </div>
+        </div>
+
+
+        <!-- Load JS libraries: jQuery, bootstrap, D3, D3 Tooltips -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/d3.min.js"></script>
+        <script src="js/d3-tip.js"></script>
+
+        <!-- Completed: Data loading, bar chart rendering -->
+        <script src="js/delivery-data.js"></script>
+        <script src="js/feedback-data.js"></script>
+        <script src="js/barchart.js"></script>
+
+        <!-- ****** TODO: FILTER DATA, DISPLAY BAR CHART & KEY FIGURES ****** -->
+        <script src="js/main.js"></script>
+
+</body>
+
+</html>
