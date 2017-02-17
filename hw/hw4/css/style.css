@@ -1,0 +1,71 @@
+body {
+    font: 12px Arial;
+    background-color: rgba(196, 189, 172, 0.19);
+}
+#header {
+    width: 100%;
+    height: 230px;
+    background-position: center;
+    background-size: cover;
+    background-image: url('../img/image.jpg');
+}
+#space1 {
+    height: 70px;
+}
+#space2 {
+    height: 30px;
+}
+#text {
+    text-align: center;
+    z-index: 100;
+    color: #3b3a3a;
+    font-size: 70px;
+    font-weight: bold;
+    width: 750px;
+    margin: 0 auto;
+    vertical-align: middle;
+    background-color: rgba(211, 211, 211, 0.66);
+}
+p {
+    margin-left: 17px;
+}
+
+/* AREA-CHART */
+
+svg {
+    border: 1px solid rgba(88, 88, 88, 0.38);
+    background: rgba(211, 211, 211, 0.36);
+}
+.area {
+    fill: rgba(109, 10, 10, 0.85);
+    stroke: rgba(144, 144, 144, 0.6);
+    stroke-width: 3;
+}
+.tooltip-line {
+    stroke: rgba(144, 144, 144, 0.6);
+    opacity: 1;
+    stroke-width: 3;
+}
+
+.text {
+    fill: #717171;
+    shape-rendering: crispEdges;
+}
+.titel {
+    font-size: 20px;
+}
+.label {
+    font-size: 14px;
+}
+.axis path,
+.axis line {
+    fill: none;
+    stroke: #000;
+    stroke-width: 1;
+    shape-rendering: crispEdges;
+}
+.bar {
+    fill: rgba(109, 10, 10, 0.85);
+    stroke: rgba(144, 144, 144, 0.6);
+    stroke-width: 3;
+}
