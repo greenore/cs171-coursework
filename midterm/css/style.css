@@ -1,0 +1,131 @@
+/* Main HTML */
+
+body {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+}
+
+#header {
+    width: 100%;
+    height: 150px;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-image: url('../img/header4.jpg');
+}
+
+#header_txt {
+    width: 100%;
+    text-align: left;
+    z-index: 100;
+    color: #862f2f;
+    margin: auto;
+    font-size: 70px;
+    font-weight: bolder;
+    width: 1000px;
+}
+
+h1,
+h2 {
+    text-shadow: #747474 0 0 10px;
+}
+
+#pic1 {
+    width: 350px;
+    height: 320px;
+}
+
+#header_source {
+    text-align: right;
+}
+
+#space1 {
+    height: 10px;
+}
+
+.space2 {
+    height: 22px;
+}
+
+#selected-variable {
+    font-size: 14px;
+    width: 450px;
+    background-color: rgba(217, 209, 209, 0.88);
+    font-weight: bold;
+    color: black;
+}
+
+#global-funding {
+    text-align: center;
+}
+
+.chart-text {
+    font-size: 12px;
+}
+
+
+/* Choropleth */
+
+path {
+    stroke: rgba(0, 0, 0, 0.49);
+    stroke-width: .8px;
+    fill: black;
+}
+
+.legendText {
+    fill: white;
+}
+
+.legendText {
+    fill: white;
+}
+
+.btn {
+    background-color: #cecece;
+}
+
+div.tooltip {
+    position: absolute;
+    text-align: center;
+    width: 150px;
+    height: 45px;
+    padding: 2px;
+    color: white;
+    font-size: 14px;
+    background: black;
+    border: 1px;
+    border-radius: 8px;
+    pointer-events: none;
+}
+
+#tooltip2 {
+    width: 170px;
+    height: 70px;
+}
+
+
+/* Linechart */
+
+.lineText {
+    fill: white;
+}
+
+.axis {
+    fill: white;
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: white;
+    shape-rendering: crispEdges;
+}
+
+.x.axis path {
+    display: none;
+}
+
+.line {
+    fill: none;
+    stroke: steelblue;
+    stroke-width: 2.5;
+}
