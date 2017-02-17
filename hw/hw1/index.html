@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Homework 1</title>
+
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8">
+                <h1>Global Hunger Index (GHI)</b></h1>
+                <!--HTML table-->
+                <table id="tb1" class="mytable sortable">
+                    <tr>
+                        <td><b>Country</b></td>
+                        <td><b>1990</b></td>
+                        <td><b>2000</b></td>
+                        <td><b>2014</b></td>
+                    </tr>
+                    <tr>
+                        <td>Central African Republic</td>
+                        <td>51.9</td>
+                        <td>51.4</td>
+                        <td>46.9</td>
+                    </tr>
+                    <tr>
+                        <td>Chad</td>
+                        <td>65</td>
+                        <td>52</td>
+                        <td>46.4</td>
+                    </tr>
+                    <tr>
+                        <td>Haiti</td>
+                        <td>52.1</td>
+                        <td>42.8</td>
+                        <td>37.3</td>
+                    </tr>
+                    <tr>
+                        <td>Madagascar</td>
+                        <td>44.8</td>
+                        <td>44.1</td>
+                        <td>36.3</td>
+                    </tr>
+                    <tr>
+                        <td>Sierra Leone</td>
+                        <td>58.8</td>
+                        <td>53.5</td>
+                        <td>38.9</td>
+                    </tr>
+                    <tr>
+                        <td>East Timor</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>40.7</td>
+                    </tr>
+                    <tr>
+                        <td>Zambia</td>
+                        <td>47</td>
+                        <td>50.9</td>
+                        <td>41.1</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col-sm-4">
+            </div>
+        </div>
+
+        <p>
+
+        </p>
+        <div class="row">
+        </div>
+
+        <div class="row">
+
+            <h1>Good & Bad Visualizations</h1>
+
+            <!--Bootstrap Carousel-->
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                    <li data-target="#myCarousel" data-slide-to="3"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+
+
+                    <div class="item active">
+                        <div class="col-sm-7">
+                            <img src="img/uk-traffic.jpg" alt="UK-Traffic">
+                        </div>
+                        <div class="col-sm-5">
+                            <h1>UK Traffic Accidents (Good)</h1>
+                            <li>As part of their series on road accidents, BBC News mapped every recorded death on the road in Great Britain, from 1999 to 2010. That's 2,396,750 road crashes.</li>
+                            <li>They used only yellow as a color while the background is black. Every death is a small yellow dot.</li>
+                            <li>Through this minimalistic approach the visualisation is very effectiv. Nothing distracts from the main story, i.e., where most deaths occure.</li>
+                            <li>The map might be improved a bit with the indication of the country borders.</li>
+                            <li>The general problem with that kind of visualizations is, that it basicly shows a population density map, i.e., the map would be even more useful if it included information about traffic density – this would highlight particularly safe as well as dangerous stretches of the road map.</li>
+                            <li>Source: <a href='http://www.bbc.co.uk/news/uk-15975724'>http://www.bbc.co.uk/news/uk-15975724</a></li>
+                        </div>
+
+                    </div>
+
+                    <div class="item">
+                        <div class="col-sm-7">
+                            <img src="img/income-vs-college.jpg" alt="Income-College">
+                        </div>
+                        <div class="col-sm-5">
+                            <h1>How Family Income predicts children's College Chances (Good)</h1>
+                            <li>The Upshot/NYT asked readers to draw a line that plotted family income against the percent of children who attended college. That means your individual guess, reality, and what other people thought the correlation looked like.</li>
+                            <li>They used a simple linechart with and plotted with purple the density of guesses of other people. </li>
+                            <li>It challenges the reader to think about the relationship between income and college attendance.</li>
+                            <li>The usage of the density is a very nice addon to visualize a big amount of lines.</li>
+                            <li>I would a more neutral kind of color. The graph also begs the question if it not to difficult to understand for layman, i.e., a different graph might be better.</li>
+                            <li>Source: <a href='http://www.nytimes.com/interactive/2015/05/28/upshot/you-draw-it-how-family-income-affects-childrens-college-chances.html'>http://www.nytimes.com/interactive/2015/05/28/upshot/you-draw-it-how-family-income-affects-childrens-college-chances.html</a></li>
+                        </div>
+
+                    </div>
+
+
+                    <div class="item">
+                        <div class="col-sm-7">
+                            <img src="img/baby_boomers.jpg" alt="Babyboomers">
+                        </div>
+                        <div class="col-sm-5">
+                            <h1>How Baby Boomers Describe Themselves (Bad)</h1>
+                            <li>Beyond.com conducted a survey with 6,361 job seekers and veteran HR professionals form April 12 - May 9, 2013. With the data they created a graph of how babyboomers describe themselfs. </li>
+                            <li>They create a kind of pie chart inside a person and fill it with colors.</li>
+                            <li>The first problem is that the percentages don't add up to 100, i.e., 40% + 61% + 22% + 78% + 42% = 243%</li>
+                            <li>Furthermore, the color allocation isn’t representative of the %. </li>
+                            <li>A better graph would be to use a barchart.</li>
+                            <li>Source: <a href='http://viz.wtf/post/59697293967/hes-243-baby-boomer'>http://viz.wtf/post/59697293967/hes-243-baby-boomer</a></li>
+
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="col-sm-7">
+                            <img src="img/svp.jpg" alt="SVP">
+                        </div>
+                        <div class="col-sm-5">
+                            <h1>Immigration into Switzerland (Bad)</h1>
+                            <li>During the Swiss election campagne of 2015 the conservative Swiss People's Party used a missleading ad in the newspapers.</li>
+                            <li>The graph supposidly shows the "predicted" immigration into Switzerland from 1980 up to 2030. The red color shows Swiss inhabitents, the yellow one nationalized Swiss and the blue color foreigners.</li>
+                            <li>The first problem is, that the bottom of the graphic is omitted, i.e., the scale begins at 4 million. Or in other words: 4 million Swiss are simply tilted from the illustration.</li>
+                            <li>Furthermore, the amount of foreigners in the year 1980 is set to nearly zero. However, the real amount according to the federal institiute of statistics was 15 percent. This deception increases the percived growth by quit a bit.</li>
+                            <li>In order to improve the graph the correct as well as all data should be shown. </li>
+                            <li>Source: <a href='http://www.20min.ch/'>http://www.20min.ch/</a></li>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+    <!--Scripts-->
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="js/sorttable.js"></script>
+    <script src="js/jquery-col-highlighting.js"></script>
+
+
+</body>
+
+</html>

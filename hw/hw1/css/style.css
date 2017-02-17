@@ -1,0 +1,40 @@
+html * {
+    font-family: Helvetica;
+}
+
+h1 {
+    font-size: large;
+    color: darkcyan;
+}
+
+.mytable {
+    width: 20%;
+}
+
+/*Table header*/
+/* --> Not needed...
+.mytable th {
+    background: white;
+}
+*/
+
+/*Table body*/
+.mytable td {
+    padding: 7px;
+    border: white 1px solid;
+}
+
+/*  Define the background color for all the ODD background rows  */
+.mytable tr:nth-child(odd) {
+    background: darkgrey;
+}
+
+/*  Define the background color for all the EVEN background rows  */
+.mytable tr:nth-child(even) {
+    background: lightgray;
+}
+
+/*Col Highling with Jquery helper function */
+.highlighted {
+    background-color: darkcyan;
+}
